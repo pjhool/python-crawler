@@ -1,5 +1,28 @@
 책의 예제 파일과 관련된 추가 설명 파일입니다.
 
+# 5장 
+
+#1. MySQL 
+
+## 1.1 root login 
+  mysql -u root -p
+1.2 create database 
+  CREATE Database scrapingdata DEFAULT character set utf8;
+1.3 create user 
+  CREATE USER 'scrapingman' identified by 'myPassword-1'; 
+1.4 Gant user 
+  GRANT ALL on scrapingdata.* To scrapingman;
+  
+  
+
+## 2. Python library 
+1. logging   : eliot  
+2. concurrent processing : concurrent.Future
+3. pydub : mp3 editing 
+
+  
+
+
 # 6장 
 
 ## 프로젝트 파일의 일부
