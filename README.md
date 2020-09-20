@@ -74,7 +74,8 @@
  Primary Key( id ) )
  ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT  CHARSET=utf8mb4;
 
-- mysql> insert into books  ( id, title, publisher_id , language_id ) values (  34973284, 'HTML5 웹 프로그래밍' , 2 ,1 ) , ( 2, '한빛미디어') , ( 3, ' Addison-Wesley') ;
+- mysql> insert into books  ( id, title, publisher_id , language_id ) values (  34973284, 'HTML5 웹 프로그래밍' , 2 ,1 ) , 
+                       ( 57556147 ,  ' Hello Coding Python' , 2 ,1  ) , ( 71051687 , ' 파이썬을 이용한 머신러닝' , 1, 1 ) ;
 
 
 
