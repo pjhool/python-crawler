@@ -53,7 +53,20 @@
  Primary Key( id )
  ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT  CHARSET=utf8mb4;
 
-- insert into languages ( id ,names) values ( 1, '한국어') , ( 2, '영어');   
+- mysql>  insert into languages ( id ,name ) values ( 1, '한국어') , ( 2, '영어');   
+
+- mysql> CREATE table publishers ( 
+ id int(11) unsigned NOT NULL AUTO_INCREMENT ,
+ name varchar(128) NOT NULL DEFAULT '' , 
+ created_at timestamp NOT NULL Default current_timestamp on UPDATE current_timestamp ,
+ updated_at timestamp NOT NULL Default current_timestamp on UPDATE current_timestamp ,
+ Primary Key( id )
+ ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT  CHARSET=utf8mb4;
+
+- mysql> insert into publishers ( id, name) values ( 1, '위키 북스') , ( 2, '한빛미디어') , ( 3, ' Addison-Wesley') ;
+
+
+
 
 
 
