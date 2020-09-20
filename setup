@@ -1,1 +1,13 @@
 1. MySQL 
+
+1.1 root login 
+  mysql -u root -p
+1.2 create database 
+  CREATE Database scrapingdata DEFAULT character set utf8;
+1.3 create user 
+  CREATE USER 'scrapingman' identified by 'myPassword-1'; 
+1.4 Gant user 
+  GRANT ALL on scrapingdata.* To scrapingman;
+  
+  
+
