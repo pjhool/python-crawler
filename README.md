@@ -42,10 +42,10 @@
 
 ## Database
 
--mysql) create database book_db DEFAULT character set utf8;
--mysql) use book_db ; 
+- mysql) create database book_db DEFAULT character set utf8;
+- mysql) use book_db ; 
 
--mysql> CREATE table languages ( 
+- mysql> CREATE table languages ( 
  id int(11) unsigned NOT NULL AUTO_INCREMENT ,
  name varchar(8) NOT NULL DEFAULT '' , 
  created_at timestamp NOT NULL Default current_timestamp on UPDATE current_timestamp ,
@@ -53,7 +53,7 @@
  Primary Key( id )
  ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT  CHARSET=utf8mb4;
 
--insert into languages ( id ,names) values ( 1, '한국어') , ( 2, '영어');   
+- insert into languages ( id ,names) values ( 1, '한국어') , ( 2, '영어');   
 
 
 
