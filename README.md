@@ -40,7 +40,7 @@
 
 # 6장 
 
-## Database Setup 
+## BOOK_DB Database Setup 
 
 - mysql) create database book_db DEFAULT character set utf8;
 - mysql) use book_db ; 
@@ -76,6 +76,47 @@
 
 - mysql> insert into books  ( id, title, publisher_id , language_id ) values (  34973284, 'HTML5 웹 프로그래밍' , 2 ,1 ) , 
                        ( 57556147 ,  ' Hello Coding Python' , 2 ,1  ) , ( 71051687 , ' 파이썬을 이용한 머신러닝' , 1, 1 ) ;
+
+
+## Scrapy Database Setup 
+
+- mysql) create database quotes DEFAULT character set utf8;
+- mysql) use quotes ; 
+
+- mysql> CREATE table quotes ( 
+ id int(11) unsigned NOT NULL AUTO_INCREMENT ,
+ author varchar(255) NOT NULL DEFAULT '' ,
+ text text, 
+ text_hash  char(64) Default Null , 
+ created_at timestamp NOT NULL Default current_timestamp  ,
+ updated_at timestamp NOT NULL Default current_timestamp on UPDATE current_timestamp ,
+ Primary Key( id ) ,
+ Unique key text_hash( text_hash )  ) 
+ ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT  CHARSET=utf8mb4;
+
+
+
+- mysql> CREATE table tags  ( 
+ id int(11) unsigned NOT NULL AUTO_INCREMENT ,
+ name varchar(255) NOT NULL DEFAULT '' , 
+ created_at timestamp NOT NULL Default current_timestamp   ,
+ updated_at timestamp NOT NULL Default current_timestamp on UPDATE current_timestamp ,
+ Primary Key( id ) ,
+ unique key tag( name) )
+ ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT  CHARSET=utf8mb4;
+
+
+
+- mysql> CREATE table quotes_tags  ( 
+ id int(11) unsigned NOT NULL AUTO_INCREMENT ,
+ quote_id  int(11) NOT NULL DEFAULT '' ,
+ tag_id int(11) not null , 
+ title varchar(255) not null default '', 
+ created_at timestamp NOT NULL Default current_timestamp   ,
+ updated_at timestamp NOT NULL Default current_timestamp on UPDATE current_timestamp ,
+ Primary Key( id )  , 
+ unique key quote_tag ( quote_id, tag_id ) )
+ ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT  CHARSET=utf8mb4;
 
 
 
