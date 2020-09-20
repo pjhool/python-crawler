@@ -13,12 +13,20 @@
   
   
 
-## 2. Python library 
+## 1.5 Python library 
 - logging   : eliot  
 - concurrent processing : concurrent.Future
 - pydub : mp3 editing 
+- Celery : pip install redis  celery  
+- Celery Web UI : flower 
 
-  
+## 1.6 running Celery 
+- Running Worker 
+- celery -A crawler_with_celery_sample multi start download   -Q download -c 2 -l info --logfile=./worker-download.log --pidfile=./worker-download.pid 
+- celery -A crawler_with_celery_sample multi start media   -Q media  -c 2 -l info --logfile=./worker-media.log --pidfile=./worker-media.pid
+
+- Running Crawling 
+- python crawler_with_celery_sample.py
 
 
 # 6장 
