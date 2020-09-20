@@ -40,7 +40,7 @@
 
 # 6장 
 
-## Database
+## Database Setup 
 
 - mysql) create database book_db DEFAULT character set utf8;
 - mysql) use book_db ; 
@@ -48,9 +48,9 @@
 - mysql> CREATE table languages ( 
  id int(11) unsigned NOT NULL AUTO_INCREMENT ,
  name varchar(8) NOT NULL DEFAULT '' , 
- created_at timestamp NOT NULL Default current_timestamp on UPDATE current_timestamp ,
+ created_at timestamp NOT NULL Default current_timestamp  ,
  updated_at timestamp NOT NULL Default current_timestamp on UPDATE current_timestamp ,
- Primary Key( id )
+ Primary Key( id ) )
  ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT  CHARSET=utf8mb4;
 
 - mysql>  insert into languages ( id ,name ) values ( 1, '한국어') , ( 2, '영어');   
@@ -58,14 +58,23 @@
 - mysql> CREATE table publishers ( 
  id int(11) unsigned NOT NULL AUTO_INCREMENT ,
  name varchar(128) NOT NULL DEFAULT '' , 
- created_at timestamp NOT NULL Default current_timestamp on UPDATE current_timestamp ,
+ created_at timestamp NOT NULL Default current_timestamp   ,
  updated_at timestamp NOT NULL Default current_timestamp on UPDATE current_timestamp ,
- Primary Key( id )
+ Primary Key( id ) )
  ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT  CHARSET=utf8mb4;
 
 - mysql> insert into publishers ( id, name) values ( 1, '위키 북스') , ( 2, '한빛미디어') , ( 3, ' Addison-Wesley') ;
 
+- mysql> CREATE table books ( 
+ id int(11) unsigned NOT NULL AUTO_INCREMENT ,
+ publisher_id  int(11) NOT NULL DEFAULT '' ,
+ title varchar(255) not null default '', 
+ created_at timestamp NOT NULL Default current_timestamp   ,
+ updated_at timestamp NOT NULL Default current_timestamp on UPDATE current_timestamp ,
+ Primary Key( id ) )
+ ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT  CHARSET=utf8mb4;
 
+- mysql> insert into books  ( id, title, publisher_id , language_id ) values (  34973284, 'HTML5 웹 프로그래밍' , 2 ,1 ) , ( 2, '한빛미디어') , ( 3, ' Addison-Wesley') ;
 
 
 
