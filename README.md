@@ -163,6 +163,24 @@ ORATOR_CONFIG = {
 - https://feedly.com 
 
 
+## SAKILA Database 
+- https://dev.mysql.com/doc/sakila/en/
+- https://dev.mysql.com/doc/index-other.html 
+- https://downloads.mysql.com/docs/sakila-db.tar.gz 
+- mysql -u root < sakila-schema.sql
+- mysql -u root < sakila-data.sql 
+
+
+## Flashk app run
+- pip install Flash 
+- pip install peewee  : ORM library 
+- pip install flask-restful : REST service 
+- FLASK_APP=hell.py flask run 
+- coding db.py  from ` python -m pwiz -e mysql -u root sakila ` 
+
+
+
+
 
 ## 프로젝트 파일의 일부
 
