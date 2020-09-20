@@ -1,8 +1,6 @@
 책의 예제 파일과 관련된 추가 설명 파일입니다.
 
-# 5장 
-
-#1. MySQL 
+# 5장  MySQL 
 
 ## 1.1 root login 
  - mysql -u root -p
