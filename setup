@@ -1,6 +1,6 @@
-1. MySQL 
+#1. MySQL 
 
-1.1 root login 
+## 1.1 root login 
   mysql -u root -p
 1.2 create database 
   CREATE Database scrapingdata DEFAULT character set utf8;
@@ -11,7 +11,7 @@
   
   
 
-2. Python library 
+## 2. Python library 
 1. logging   : eliot  
 2. concurrent processing : concurrent.Future
 3. pydub : mp3 editing 
