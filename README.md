@@ -16,9 +16,9 @@
   
 
 ## 2. Python library 
-- 1. logging   : eliot  
-- 2. concurrent processing : concurrent.Future
-- 3. pydub : mp3 editing 
+- logging   : eliot  
+- concurrent processing : concurrent.Future
+- pydub : mp3 editing 
 
   
 
