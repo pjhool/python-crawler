@@ -32,6 +32,12 @@
 - python crawler_with_celery_sample.py
 ```
 
+- Celery WebUI 
+```
+- celery -A crawler_with_celery_sample flower 
+```
+
+
 # 6장 
 
 ## 프로젝트 파일의 일부
