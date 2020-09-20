@@ -42,17 +42,20 @@
 
 ## Database
 
-mysql) create database book_db DEFAULT character set utf8;
-mysql) use book_db ; 
+-mysql) create database book_db DEFAULT character set utf8;
+-mysql) use book_db ; 
 
-mysql> CREATE table languages ( 
+-mysql> CREATE table languages ( 
  id int(11) unsigned NOT NULL AUTO_INCREMENT ,
  name varchar(8) NOT NULL DEFAULT '' , 
  created_at timestamp NOT NULL Default current_timestamp on UPDATE current_timestamp ,
  updated_at timestamp NOT NULL Default current_timestamp on UPDATE current_timestamp ,
  Primary Key( id )
  ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT  CHARSET=utf8mb4;
- 
+
+-insert into languages ( id ,names) values ( 1, '한국어') , ( 2, '영어');   
+
+
 
 ## 프로젝트 파일의 일부
 프로젝트를 만드는 경우, 프로젝트 파일 전체를 예제 파일로 넣는 것은 찾아보는 것을 오히려 힘들게 만들 수 있을 것이라 생각해서, 필요한 파일만 넣었습니다. 복사해서 사용해주세요.
