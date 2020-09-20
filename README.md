@@ -157,6 +157,13 @@ ORATOR_CONFIG = {
 
 # 7장
 
+## Feed Generator 
+
+- pip install feedgen 
+- https://feedly.com 
+
+
+
 ## 프로젝트 파일의 일부
 
 - 코드 7-15 models.py = chapter_7/models.py
